@@ -152,6 +152,15 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.passwordDisplay.style.backgroundColor = '#e8f5e9';
             setTimeout(() => elements.passwordDisplay.style.backgroundColor = '', 300);
 
+            const passwordField = document.getElementById('password');
+        if (passwordField) {
+            passwordField.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center',
+                inline: 'nearest'
+            });
+        }
+
         } catch (error) {
             alert(error.message);
             elements.infoPanel.innerHTML = `<strong>Ошибка:</strong> ${error.message}`;
