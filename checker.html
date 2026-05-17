@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourPass — Проверка пароля</title>
+    <script src="js/checker.js"></script>
+    <link rel="icon" href="assets/lockkk.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/checker.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-lock"></i> YourPass</h1>
+                <div class="tagline">Генератор ваших надежных паролей</div>
+            </div>
+            <a href="index.html" class="to-main">← На главную</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="checker-card">
+                <h1 class="checker-title">Проверка пароля</h1>
+                <p class="checker-subtitle">Введите пароль, чтобы оценить его надёжность</p>
+
+                <div class="input-area">
+                    <div class="password-field-wrapper">
+                        <input type="password" id="passwordInput" class="password-input" placeholder="Введите пароль...">
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            <span class="material-symbols-outlined">visibility_off</span>
+                        </button>
+                    </div>
+                    <button class="check-btn" id="checkBtn">
+                        <span class="material-symbols-outlined">verified</span>
+                        Проверить
+                    </button>
+                </div>
+
+                <div class="result-card" id="resultCard">
+                    <div id="strengthBadge" class="strength-badge strength-weak">
+                        <span class="material-symbols-outlined">warning</span> Слабый
+                    </div>
+                    <div class="score-text" id="scoreText">Выполнено 0 из 8 критериев</div>
+                </div>
+
+                <div class="criteria-list" id="criteriaList"></div>
+
+                <div class="tips" id="tips">
+                    <h4><span class="material-symbols-outlined">lightbulb_2</span> Как создать надёжный пароль:</h4>
+                    <ul>
+                        <li>Используйте не менее 12 символов</li>
+                        <li>Комбинируйте заглавные и строчные буквы</li>
+                        <li>Добавляйте цифры и спецсимволы</li>
+                        <li>Избегайте словарных слов и личной информации</li>
+                        <li>Используйте менеджер паролей</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <div class="copyright">
+                    <p>© 2026 YourPass. Школьный проект по информатике.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="assets/about.pdf">О проекте</a>
+                    <a href="#">Исходный код</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

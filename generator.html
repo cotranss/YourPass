@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/generator.js" defer></script>
+    <title>YourPass — Генератор паролей</title> 
+    <link rel="icon" href="assets/lockkk.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/generator.css"> 
+
+</head> 
+
+<body> 
+   
+    <!-- ШАПКА --> 
+    <header class="header"> 
+        <div class="container"> 
+            <div class="logo"> 
+                <h1><i class="fas fa-lock"></i> YourPass</h1> 
+                <div class="tagline">Генератор ваших надежных паролей</div> 
+            </div> 
+            <a href=index.html class="to-main">← На главную</a> 
+        </div> 
+    </header> 
+
+    <!-- ОСНОВНОЙ БЛОК --> 
+    <section class="generator-section"> 
+
+        <div class="container"> 
+
+            <div class="generator-card"> 
+                <h1 class="generator-title">Генератор паролей</h1> 
+                <p class="generator-subtitle">Создавайте надёжные пароли с учётом ваших требований</p> 
+
+                <!-- Результат --> 
+                <div class="result-area"> 
+                    <div class="password-label">Сгенерированный пароль</div> 
+                    <div class="password-wrapper"> 
+                        <div class="password-display" id="password">Нажмите "Сгенерировать"</div> 
+                        <button class="copy-btn">
+                        <span class="material-symbols-outlined" style="font-size: 18px;">file_copy</span>
+                        Копировать</button> 
+                    </div> 
+                </div> 
+
+                <!-- Настройки --> 
+                <div class="settings-grid"> 
+
+                    <div class="setting-group"> 
+                        <label class="setting-label"> 
+                            <span class="material-symbols-outlined">arrow_range</span> Длина пароля 
+                        </label> 
+                        <input type="number" id="length" value="12" min="6" max="50" step="1"> 
+                    </div> 
+
+                    <div class="setting-group"> 
+                        <label class="setting-label"> 
+                            <span class="material-symbols-outlined">key</span> Ключевое слово 
+                        </label> 
+                        <input type="text" id="keyword" placeholder="например: mySecret"> 
+                    </div> 
+
+                    <div class="setting-group"> 
+
+                        <label class="setting-label"> 
+                            <span class="material-symbols-outlined">keep</span> Положение ключевого слова 
+                        </label> 
+
+                        <div class="radio-group"> 
+                            <label class="radio-label"> 
+                                <input type="radio" name="keywordPosition" value="random" checked>
+                                <span class="material-symbols-outlined">casino</span>
+                                Где угодно 
+                            </label> 
+
+                            <label class="radio-label"> 
+                                <input type="radio" name="keywordPosition" value="start">
+                                <span class="material-symbols-outlined">horizontal_align_left</span>
+                                В начале 
+                            </label> 
+
+                            <label class="radio-label"> 
+                                <input type="radio" name="keywordPosition" value="end">
+                                <span class="material-symbols-outlined">horizontal_align_right</span>
+                                В конце 
+                            </label> 
+                        </div> 
+                    </div> 
+
+                    <div class="setting-group"> 
+                        <label class="setting-label"> 
+                            <span class="material-symbols-outlined" style="font-size: 30px;">abc</span> Типы символов 
+                        </label> 
+
+                        <div class="checkbox-group"> 
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="lowercase" checked> a-z 
+                            </label> 
+                            <label class="checkbox-label"> 
+                                <input type="checkbox" id="uppercase" checked> A-Z 
+                            </label> 
+                            <label class="checkbox-label"> 
+                                <input type="checkbox" id="numbers" checked> 0-9 
+                            </label> 
+                            <label class="checkbox-label"> 
+                                <input type="checkbox" id="symbols"> !@#$% 
+                            </label> 
+                        </div> 
+                    </div> 
+                </div> 
+
+                <button class="generate-btn">
+                <span class="material-symbols-outlined" style="font-size: 23px;">cached</span>
+                Сгенерировать пароль</button> 
+
+                <div class="info-panel" id="info"> 
+                    <span class="material-symbols-outlined">lightbulb_2</span> Настройте параметры и нажмите кнопку для генерации 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+ 
+    <!-- ПОДВАЛ --> 
+    <footer class="footer"> 
+        <div class="container"> 
+            <div class="disclaimer"> 
+                <h3><span class="material-symbols-outlined" style="font-family: 20px;">warning</span> Важно о безопасности</h3> 
+                <p>
+                    <strong>Никогда не используйте один и тот же пароль для разных сервисов.</strong>  
+                    Надёжный пароль должен содержать не менее 12 символов, включать буквы разного регистра,  
+                    цифры и специальные символы. Храните пароли в менеджерах паролей, а не в текстовых файлах  
+                    или браузере. Регулярно обновляйте пароли для критически важных аккаунтов. 
+                </p> 
+            </div> 
+
+            <div class="footer-info"> 
+                <div class="copyright"> 
+                    <p>© 2026 YourPass. Школьный проект по информатике.</p> 
+                </div> 
+                <div class="footer-links"> 
+                    <a href="assets/about.pdf">О проекте</a> 
+                    <a href="#">Исходный код</a> 
+                </div> 
+            </div> 
+        </div> 
+
+    </footer> 
+</body> 
+</html> 
