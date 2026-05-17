@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourPass — Ваши надежные пароли</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="assets/lockkk.png" type="image/x-icon">
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header"> 
+        <div class="container"> 
+            <div class="logo"> 
+                <h1><i class="fas fa-lock"></i> YourPass</h1> 
+                <div class="tagline">Генератор ваших надежных паролей</div> 
+    </header> 
+
+    <!-- Основное содержимое -->
+    <main class="main">
+        <div class="container">
+            <!-- Герой-секция с приветствием -->
+            <section class="hero">
+                <h2 class="hero-title">Создавайте идеальные пароли</h2>
+                <p class="hero-subtitle">Удобный генератор и проверка надежности в одном месте</p>
+                
+                <div class="action-cards">
+                    <!-- Карточка 1: Генератор -->
+                    <div class="card card-generator">
+                        <div class="card-icon"><i class="fas fa-cog"></i></div>
+                        <h3 class="card-title">Генератор паролей</h3>
+                        <p class="card-description">Создайте уникальный сложный пароль с настройками под ваши нужды</p>
+                        <a href="generator.html" class="btn btn-primary">Создать пароль</a>
+                    </div>
+                    
+                    <!-- Карточка 2: Проверка -->
+                    <div class="card card-checker">
+                        <div class="card-icon"><i class="fas fa-search"></i></div>
+                        <h3 class="card-title">Проверка надежности</h3>
+                        <p class="card-description">Узнайте, насколько безопасен ваш существующий пароль</p>
+                        <a href="checker.html" class="btn btn-secondary">Проверить пароль</a>
+                    </div>
+                    
+                    <!-- Карточка 3: Памятка -->
+                    <div class="card card-guide">
+                        <div class="card-icon"><i class="fas fa-book"></i></div>
+                        <h3 class="card-title">Руководство по безопасности</h3>
+                        <p class="card-description">Узнайте, как создавать и хранить пароли правильно</p>
+                        <a href="guide.html" class="btn btn-outline">Читать руководство</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Дополнительная информация -->
+            <section class="features">
+                <h2 class="section-title">Почему наш инструмент безопасен?</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon"><i class="fas fa-laptop"></i></div>
+                        <h3>Все в браузере</h3>
+                        <p>Пароли генерируются и проверяются локально на вашем устройстве</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon"><i class="fas fa-ban"></i></div>
+                        <h3>Нет отправки на сервер</h3>
+                        <p>Ваши пароли никуда не передаются и не сохраняются</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon"><i class="fas fa-code"></i></div>
+                        <h3>Открытый код</h3>
+                        <p>Исходный код проекта доступен для проверки</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="disclaimer">
+                <h3>Важная информация о безопасности</h3>
+                <p>Все пароли, созданные генератором или проверенные на этом сайте, обрабатываются исключительно в вашем браузере. Мы <strong>не сохраняем, не передаем и не имеем доступа</strong> к вашим паролям. Утечка данных невозможна благодаря структуре сайта.</p>
+            </div>
+            
+            <div class="footer-info">
+                <div class="copyright">
+                    <p>© 2026 YourPass. Школьный проект по информатике.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="assets/about.pdf">О проекте</a>
+                    <a href="https://github.com/ваш-логин/password-generator" target="_blank" rel="noopener noreferrer">Исходный код</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
